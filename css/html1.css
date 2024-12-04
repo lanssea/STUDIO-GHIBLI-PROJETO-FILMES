@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(6,147,227,1);
+    
+}
+
+
+.botao-studio {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    position: center;
+}
+
+.imagem-studio {
+    cursor: pointer;
+    border: none;
+    background: transparent;  
+     
+}
+
+
+.imagem-studio img {
+    
+    width: 300px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+
+
+.imagem-studio:hover {   
+   
+    transform: scale(0.95);
+    transition: transform 0.1s ease;  
+}
+
+
+.menu-menu {
+    width: 40px;  
+   
+}
+
+.menu-menu:hover {
+    cursor: pointer;
+}

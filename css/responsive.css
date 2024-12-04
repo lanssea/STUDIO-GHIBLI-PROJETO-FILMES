@@ -1,0 +1,139 @@
+@media (max-width: 425px) {
+
+    .fundo{
+
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        height: 100vh;      
+        object-fit: cover;            padding: 0px;
+        background-position: center;
+        box-sizing: border-box;
+        overflow-x: hidden;  
+          
+        
+    }
+
+   
+    .filmes{
+
+       
+       
+       max-width: 100%;
+       height: auto;
+       border-radius: 0px;
+       overflow-x: hidden; 
+      
+     
+
+    }
+
+   
+   
+    .hamburger{
+        background-color: transparent;
+        width: 70px;
+        height: 44.4px;
+        position: absolute;
+        top: 0px;
+        right:0px;
+        z-index: 1100;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+       /* display: flex; */
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .menu-imagem{
+        
+        width: 120px;
+        height: auto;
+        position: absolute; 
+        background-color: transparent;
+        
+        left:0px;
+        z-index: 1100;   
+        object-fit: cover;  
+    
+    }
+
+    .menu-imagem img{
+        
+        width: 110px;
+        height: auto; 
+        
+    }
+
+  
+
+
+    .poster {  
+        
+        text-align: center;
+        width: 165.4px;
+        height: 215.3px;
+        border-radius: 18px;
+        position: absolute;
+        top: 60px; 
+        left: 90px;
+        margin: 0px;
+      
+    }
+
+    .netflix{
+
+     
+        text-align: center;
+        margin: 50px;
+        left: 29px;
+        top: 200px;
+    
+
+    }
+
+    .title{
+        
+        background-color: transparent;
+        object-fit: cover;
+        position: absolute;
+        background-size: cover;
+        margin: 10px;
+        padding-top:260px;
+        left:68px;
+        position: absolute;
+        width: 200px;
+        
+    }
+
+    .texto{
+       
+        color: #f4f4f4;
+        backdrop-filter: blur(1px); 
+        font-family: "open sans";
+        font-weight: bold;
+       
+        position: absolute;
+        
+        flex-direction: column;
+        justify-content: center;
+    
+        top: 350px;
+        padding-top:0px;
+        max-width: 250px;
+        max-height: 200px;
+        font-size: 12px;
+        text-align: left;
+        left: 60px;
+        
+       
+    }
+
+    .spotify{
+        
+        display: none;
+       
+    }
+}

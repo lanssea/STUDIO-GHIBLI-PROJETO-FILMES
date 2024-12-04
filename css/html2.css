@@ -1,0 +1,248 @@
+    * {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        overflow-y: auto;
+        background-color: #f2f2f2;
+        
+      }
+
+      
+.barra-do-menu {
+
+    background-color: transparent;
+    border: none;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    position: column;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    
+    
+    }
+
+   .menu-imagem{
+    width: 272.8px;
+    height: 44.4px;
+    border: none;
+    background-color: transparent;
+    overflow: hidden; 
+    
+
+   }
+
+
+   .icon-imagem{
+    height: 50px;
+   }
+    
+    .menu-menu {
+        width: 40px;  
+    }
+    
+    .menu-menu:hover {
+        cursor: pointer;
+    }
+       
+    
+   
+         .filmes {
+         display: none;
+         margin: auto;
+         width:1259px;
+         height: 450.9px;  
+         border-radius: 18px;
+         overflow: hidden; 
+         place-items: center;
+              
+        }
+         .filmes img{
+         max-width: 100%; 
+         
+         
+        }
+
+        .filmes.active {
+            display: block; /* Torna a div visível quando ativa */
+        }
+
+
+  
+         .poster {
+         transition: transform 0.3s ease;
+         width: 198.9px;
+         height: 258.9px;
+         border-radius: 18px;
+         position: absolute; 
+         margin: 50px;
+
+         
+        }
+        
+        .poster:hover {
+            transform: scale(1.1);
+           } 
+
+           
+
+      
+    
+   
+  
+   
+  
+
+
+
+.texto{
+    color: #f4f4f4;
+    font-size: 16px;
+    justify-content: center;
+    font-family: "open sans";
+    font-weight: bold;
+    background-color: transparent;
+    position: absolute;
+    left: 440px;
+    padding-top:130px;
+    display: flex;
+    flex-direction: column;
+    max-width: 301.4px;
+    
+    
+}
+
+
+
+.title{
+    background-color: transparent;
+    object-fit: cover;
+    position: absolute;
+    background-color: transparent;
+    background-size: cover;
+    margin: 30px;
+    padding-top:30px;
+    left: 400px;
+    position: absolute;
+    width: 330px;
+}
+
+.spotify{
+
+        background-color: transparent;
+    
+        padding:0px;
+        width: 387.2px;
+        position: absolute; 
+        
+        margin: 50px;
+        margin-left:800px;
+        
+       
+        
+}
+
+.netflix{
+    
+    margin: 86px;
+    transform: translateY(250px);
+    margin-left: 50px;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Poppins ;
+    color: #ffffff ;
+    white-space: nowrap;
+    background-color: #d90b1c;
+   
+    position: absolute;
+    font-size: 10px;
+    line-height: 1.429em;
+    padding: 9px 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;         
+     
+   }
+
+   .netflix:hover{
+    cursor: pointer;
+   }
+
+   .hamburger {
+   
+    width: 300px;
+    height: 44.4px;
+    position: absolute;
+    top: 20px;
+    right:0px;
+    z-index: 1100;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilo quando o menu está aberto */
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+}
+.menu.open {
+    display: block; /* Quando a classe 'open' for adicionada, o menu ficará visível */
+}/* Menu */
+.menu {
+    cursor: pointer;
+    visibility: hidden; 
+    opacity: 0; 
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    width: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    border-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s; 
+    z-index: 9999;
+}
+
+.menu.open {
+    visibility: visible; /* Quando a classe 'open' for adicionada, o menu ficará visível */
+    opacity: 1; /* O menu ficará visível com opacidade 1 */
+    transition: opacity 0.3s ease; /* Apenas animação da opacidade */
+}
+
+.menu a {
+    display: block;
+    font-family: Poppins;
+    color: #000000;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.menu a:hover {
+    background-color: #575757;
+    color: #f2f2f2;
+}

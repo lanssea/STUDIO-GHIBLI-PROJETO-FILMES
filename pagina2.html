@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@92.1,300&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@92.1,300&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>STUDIO GHIBLI - PROJETO FILMES </title>
+
+    <link rel="icon" href="./imagens/ICON.png">
+    <link rel="stylesheet" href="./css/html2.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+<body>
+<main>
+    <ul class="barra-do-menu">
+
+        
+        <button class="menu-imagem">
+            
+            <img class="icon-imagem" src="./imagens/STUDIO GHIBLI-LOGO.png">
+        </button>
+
+        <button class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <div class="menu">
+            <a onclick="mostrarFilmes('filmes1')">O Castelo Animado</a>
+            <a onclick="mostrarFilmes('filmes2')">A Viagem De Chihiro</a>
+            <a onclick="mostrarFilmes('filmes3')">O Mundo Dos Pequeninos</a>
+            
+        </div>
+
+    </ul>
+
+    
+    <main >
+        <div id="filmes1" class="filmes">     
+            <div> 
+    
+    
+           
+                <img src="./imagens/O-Castelo-Animado.jpg" alt="Poster do filme" 
+                class="poster"> 
+    
+    
+                <button class="netflix" onclick="window.location.href='https://www.netflix.com/title/70028883';"
+                class="netflix">DISPONÍVEL NA NETFLIX</button>
+    
+                    <div class="spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5fqlZFKYqvkIe2jdDGt2nl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+    
+                     <img class="title" src="./imagens/O-Castelo-Animado-Titulo.webp" alt="">
+                     <p  class="texto">             
+                         Uma bruxa lança uma terrível maldição sobre a jovem Sophie, transformando-a numa velha de 90 anos. Desesperada, ela embarca numa odisseia na qual acaba parando no castelo animado, onde reside um   misterioso feiticeiro chamado Howl que poderá ajudá-la a reverter o feitiço.
+                     </p>
+                    
+    
+                       <img class="fundo" src="./imagens/O-Castelo-Animado.png" alt="Castelo Animado"> 
+                       
+                    </div>
+    
+            </div>
+           
+            
+    
+            
+            
+             <div id="filmes2" class="filmes">
+
+                <img src="./imagens/A-Viagem-de-Chihiro.webp" class="poster">
+                <div>
+                   <button class="netflix" onclick="window.location.href='https://www.netflix.com/br/title/60023642';"
+                   class="netflix">DISPONÍVEL NA NETFLIX</button>
+                   
+                   <div class="spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/306CeX0ft3V3BPwmGGZtkr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+    
+                   <img class="title" src="./imagens/A-Viagem-de-Chihiro-Titulo.webp" alt="">
+    
+                   <p class="texto" >Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.</p>
+
+                   <img class="fundo" src="./imagens/A Viagem de Chihiro.png">
+                </div>
+    
+            
+            </div>
+    
+          
+            <div id="filmes3" class="filmes">
+                <img src="./imagens/O-Mundo-dos-Pequeninos.webp" class="poster">
+                
+                <div>
+                       
+                   <button class="netflix" onclick="window.location.href='https://www.netflix.com/br/title/70216227';"
+                   class="netflix">DISPONÍVEL NA NETFLIX</button>
+                   
+                   <div class="spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6jdIj5WpxLBxJqaqAbONwj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                   </div>
+    
+                    <img class="title" src="./imagens/O-Mundo-dos-Pequeninos-Titulo.webp" alt="">
+    
+                    <p class="texto" >Arrietty e sua família são seres pequenos, moram sob uma casa antiga e sobrevivem roubando itens da casa dos humanos e colocando a culpa em gatos e ratos. Quando o jovem Shawn se hospeda na casa, fica amigo de Arrietty, colocando o segredo em risco.</p>
+
+                    <img class="fundo" src="./imagens/O Mundo dos Pequeninos.jpg">
+    
+                </div>          
+       
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
